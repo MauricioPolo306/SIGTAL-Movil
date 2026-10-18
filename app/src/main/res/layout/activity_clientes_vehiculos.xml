@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGTAL"
+            android:textColor="#12345A"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sistema Integral de Gestión para Taller Automotriz Londoño"
+            android:textColor="#52657A"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Clientes y Vehículos"
+            android:textColor="#172B4D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Registra la información del cliente y asocia su vehículo."
+            android:textColor="#52657A"
+            android:textSize="14sp" />
+
+        <!-- INFORMACIÓN DEL CLIENTE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="1. Información del cliente"
+            android:textColor="#12345A"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo *"
+            android:inputType="textPersonName|textCapWords"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Documento de identidad *"
+            android:inputType="number"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono *"
+            android:inputType="phone"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress|textCapSentences"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            android:inputType="textCapWords"
+            android:minHeight="52dp" />
+
+        <!-- INFORMACIÓN DEL VEHÍCULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="2. Información del vehículo"
+            android:textColor="#12345A"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Placa *"
+            android:inputType="textCapCharacters"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca *"
+            android:inputType="textCapWords"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Modelo o referencia"
+            android:inputType="textCapWords"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtAnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Año de fabricación"
+            android:inputType="number"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color"
+            android:inputType="textCapWords"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtTipoVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo (automóvil, moto, camioneta...)"
+            android:inputType="textCapWords"
+            android:minHeight="52dp" />
+
+        <EditText
+            android:id="@+id/edtKilometraje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kilometraje actual"
+            android:inputType="number"
+            android:minHeight="52dp" />
+
+        <!-- ACCIONES -->
+
+        <Button
+            android:id="@+id/btnGuardarClienteVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="54dp"
+            android:text="Guardar registro"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnLimpiarFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Limpiar formulario"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnVolverDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Volver al dashboard"
+            android:textAllCaps="false" />
+
+        <!-- CONSULTA DE REGISTROS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="3. Registros guardados"
+            android:textColor="#12345A"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/txtListaRegistros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="12dp" />
+
+
+    </LinearLayout>
+</ScrollView>

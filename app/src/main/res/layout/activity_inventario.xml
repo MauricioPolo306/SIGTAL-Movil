@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGTAL - Inventario"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar, consultar y controlar productos"
+            android:textSize="14sp"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtCodigoProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código del producto"
+            android:inputType="text"
+            android:maxLength="30" />
+
+        <EditText
+            android:id="@+id/edtNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del producto"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/edtCategoriaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Categoría"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/edtCantidadProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad disponible"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtCostoProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo unitario"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtPrecioProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio de venta unitario"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar producto" />
+
+        <Button
+            android:id="@+id/btnLimpiarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar formulario" />
+
+        <TextView
+            android:id="@+id/txtResumenInventario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen del inventario"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnVolverInventario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al panel principal" />
+
+    </LinearLayout>
+</ScrollView>

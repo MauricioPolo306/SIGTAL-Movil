@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración del taller"
+            android:textColor="#163A63"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="Administra la información general de SIGTAL."
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- INFORMACIÓN GENERAL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información general"
+            android:textColor="#163A63"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNombreTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre comercial del taller"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtRazonSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Razón social"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtNit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIT"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtActividadEconomica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Actividad económica"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción del taller"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2" />
+
+        <!-- UBICACIÓN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ubicación"
+            android:textColor="#163A63"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDireccionTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección del taller"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/edtCiudadTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtDepartamentoTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtCodigoPostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código postal"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <!-- CONTACTO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Información de contacto"
+            android:textColor="#163A63"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTelefonoTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtWhatsAppTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WhatsApp"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtCorreoTaller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtSitioWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sitio web (opcional)"
+            android:inputType="textUri"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtResponsable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del responsable"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <!-- PARÁMETROS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Parámetros de operación"
+            android:textColor="#163A63"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario de atención"
+            android:inputType="text"
+            android:text="Lunes a sábado" />
+
+        <EditText
+            android:id="@+id/edtMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Moneda (ej. COP)"
+            android:inputType="textCapCharacters"
+            android:text="COP"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtPorcentajeImpuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Porcentaje de impuesto (ej. 19)"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtUmbralStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Umbral de alerta de inventario"
+            android:inputType="number"
+            android:text="5"
+            android:singleLine="true" />
+
+        <!-- ACCIONES -->
+        <Button
+            android:id="@+id/btnGuardarConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#163A63"
+            android:text="Guardar configuración"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCerrarSesionConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cerrar sesión" />
+
+    </LinearLayout>
+</ScrollView>

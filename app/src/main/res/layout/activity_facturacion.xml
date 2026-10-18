@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGTAL - Facturación"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de ventas y servicios del taller"
+            android:textSize="14sp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSeleccionarClienteFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar cliente y vehículo" />
+
+        <TextView
+            android:id="@+id/txtClienteFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No se ha seleccionado cliente"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnAgregarProductoFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar producto o repuesto" />
+
+        <Button
+            android:id="@+id/btnAgregarManoObra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar mano de obra" />
+
+        <TextView
+            android:id="@+id/txtDetalleFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle de la factura"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorDetalleFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/txtTotalFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL: $0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar y guardar factura" />
+
+        <Button
+            android:id="@+id/btnLimpiarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nueva factura" />
+
+        <TextView
+            android:id="@+id/txtHistorialFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historial de facturas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorHistorialFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnVolverFacturacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al panel principal" />
+
+    </LinearLayout>
+</ScrollView>
