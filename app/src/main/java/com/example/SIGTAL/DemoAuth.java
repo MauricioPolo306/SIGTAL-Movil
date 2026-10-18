@@ -22,7 +22,7 @@ public class DemoAuth {
         SharedPreferences prefs = obtenerPreferencias(context);
 
         if (usuario.equalsIgnoreCase("admin")) {
-            return prefs.getString(CLAVE_ADMIN, "Admin123*");
+            return prefs.getString(CLAVE_ADMIN, "12365478");
         }
 
         if (usuario.equalsIgnoreCase("empleado")) {
